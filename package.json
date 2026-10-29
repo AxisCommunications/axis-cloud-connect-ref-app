@@ -1,0 +1,53 @@
+{
+  "name": "axis-cloud-connect-ref-app",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "setup-environment": "node sbin/setup-environment.mjs",
+    "check-env": "node sbin/check-env.mjs",
+    "start": "npm run check-env && concurrently \"npm:start:backend\" \"npm:start:frontend\"",
+    "start:frontend": "npm run start --workspace packages/frontend",
+    "start:backend": "npm run start --workspace packages/backend",
+    "dev": "npm run check-env && concurrently \"npm:dev:backend\" \"npm:dev:frontend\"",
+    "dev:frontend": "npm run dev --workspace packages/frontend",
+    "dev:backend": "npm run dev --workspace packages/backend",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "npm run build --workspace packages/frontend",
+    "build:backend": "npm run build --workspace packages/backend",
+    "type-check": "npm run type-check --workspace packages/frontend && npm run type-check --workspace packages/backend",
+    "lint": "npm run type-check && biome ci",
+    "lint:fix": "npm run lint:ts:fix && npm run format:fix",
+    "lint:ts": "biome check",
+    "lint:ts:fix": "biome check --write",
+    "test": "npm run test --workspace packages/backend && npm run test --workspace packages/frontend",
+    "format": "biome format",
+    "format:fix": "biome format --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "concurrently": "10.0.6"
+  },
+  "description": "A reference implementation for integration with Axis Cloud Connect APIs",
+  "author": "Axis Communications",
+  "license": "MIT",
+  "overrides": {
+    "shell-quote": "1.12.0"
+  },
+  "engines": {
+    "node": ">=24.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AxisCommunications/axis-cloud-connect-ref-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AxisCommunications/axis-cloud-connect-ref-app/issues"
+  },
+  "homepage": "https://github.com/AxisCommunications/axis-cloud-connect-ref-app#readme",
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

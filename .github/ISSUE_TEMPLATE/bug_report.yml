@@ -1,0 +1,63 @@
+---
+name: Bug Report
+description: Report a bug in the Axis Cloud Connect Reference App
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thanks for taking the time to report a bug! Please fill out the
+        sections below so we can reproduce and fix the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain the problem.
+
+  - type: input
+    id: device-model
+    attributes:
+      label: Axis device model (if applicable)
+      placeholder: e.g., AXIS P3265-V
+
+  - type: input
+    id: firmware-version
+    attributes:
+      label: Axis device firmware version (if applicable)
+      placeholder: e.g., 12.0.91
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: >-
+        Any other context about the problem (logs, stack traces, etc.).
