@@ -27,7 +27,7 @@
     "format:fix": "biome format --write"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.15",
+    "@biomejs/biome": "2.6.2",
     "concurrently": "10.0.6"
   },
   "description": "A reference implementation for integration with Axis Cloud Connect APIs",
