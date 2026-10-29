@@ -1,0 +1,7 @@
+node_modules
+dist
+*.local
+src/**/.DS_Store
+note/*
+tmp/*.md
+.DS_Store
