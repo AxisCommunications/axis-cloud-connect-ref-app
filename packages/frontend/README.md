@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-*©2026 Axis Communications AB. AXIS COMMUNICATIONS, AXIS, ARTPEC and VAPIX are registered trademarks of Axis AB in various jurisdictions. All other trademarks are the property of their respective owners.*
+_©2026 Axis Communications AB. AXIS COMMUNICATIONS, AXIS, ARTPEC and VAPIX are registered trademarks of Axis AB in various jurisdictions. All other trademarks are the property of their respective owners._
 <!-- markdownlint-enable MD041 -->
 
 # Frontend Package
@@ -36,17 +36,17 @@ VAPIX API. Open the **Remote Operations** tab.
 #### Running a command
 
 1. Under **Predefined commands**, select an action from the command menu — or choose
-    **Custom operation** (under the **Custom** group) to define one manually.
+   **Custom operation** (under the **Custom** group) to define one manually.
 2. In **Request Details**, review the endpoint path, HTTP method, content type, and
-    body (body is shown only for `POST` requests). For a **Custom operation** these fields
-    are editable; for predefined commands they are read-only. Fill in **Command Parameters**
-    if the selected command supports them.
+   body (body is shown only for `POST` requests). For a **Custom operation** these fields
+   are editable; for predefined commands they are read-only. Fill in **Command Parameters**
+   if the selected command supports them.
 3. Click **Preview Request** to inspect the full payload before sending. The preview
-    supports **Beautify** / **Show Raw** toggle and can be copied to clipboard or as a
-    cURL command. The preview and the cURL command include your live access token, so
-    don't share them.
+   supports **Beautify** / **Show Raw** toggle and can be copied to clipboard or as a
+   cURL command. The preview and the cURL command include your live access token, so
+   don't share them.
 4. Click **Send Request** and review the **Response** card (same formatting and copy
-    options). Sending is disabled until all required parameters are filled in and valid.
+   options). Sending is disabled until all required parameters are filled in and valid.
 
 ### Recordings
 
